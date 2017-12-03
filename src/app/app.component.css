@@ -6,3 +6,12 @@ html, body{
 a.active {
   background-color: gray;
 }
+
+.flex-column-centered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
