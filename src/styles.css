@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+header {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex: 1;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.truncate-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

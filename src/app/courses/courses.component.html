@@ -1,0 +1,24 @@
+<div class="flex flex-column course-container mb-20">
+  <course-search></course-search>
+
+  <div class="courses">
+    <div *ngFor="let course of courses" class="flex flex-row m-15">
+      <!--<div class="card text-white bg-info mb-3" style="max-width: 20rem;">-->
+        <!--<div class="card-header">{{course.id}} {{course.name}}-->
+          <!--&lt;!&ndash;<button class="btn btn-primary" (click)="deleteCourse(course)">Delete Course</button>&ndash;&gt;-->
+          <!--<button type="button" class="close" aria-label="Close">-->
+            <!--<span aria-hidden="true">&times;</span>-->
+          <!--</button>-->
+        <!--</div>-->
+        <!--<div class="card-body">-->
+          <!--<h4 class="card-title">Info card title</h4>-->
+          <!--<p class="card-text">{{course.description}}Some quick example text to build on the card title and make up-->
+            <!--the bulk of the card's content.</p>-->
+          <!--<button class="btn btn-primary">Edit Course</button>-->
+
+        <!--</div>-->
+      <!--</div>-->
+      <course-item [course]="course" (deleteCourse)="deleteCourse($event)"></course-item>
+    </div>
+  </div>
+</div>

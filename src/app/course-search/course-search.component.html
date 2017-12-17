@@ -1,0 +1,12 @@
+<div class="search-container">
+  <div class="input-group" style="width:700px">
+    <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for..."
+           [(ngModel)]="searchTerm">
+    <span class="input-group-btn">
+        <button class="btn btn-secondary" type="button" (click)="findCourse()">Find</button>
+      </span>
+  </div>
+  <div>
+    <button class="btn btn-primary">Add course</button>
+  </div>
+</div>

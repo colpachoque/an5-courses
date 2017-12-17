@@ -1,0 +1,9 @@
+:host {
+  margin-left: 15px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

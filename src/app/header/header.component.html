@@ -1,0 +1,12 @@
+<div class="flex flex-row align-center header">
+  <img src="assets/logo.png">
+  <div *ngIf="authService.isAuthenticated()" class="header-brand">
+    Courses
+    <div class="flex flex-row login">
+      <div class="mr-15">
+        User login
+      </div>
+      <button class="btn btn-primary" (click)="logoff()">logoff</button>
+    </div>
+  </div>
+</div>

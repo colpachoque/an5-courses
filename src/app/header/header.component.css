@@ -1,0 +1,21 @@
+img {
+  height: 50px;
+}
+
+.login {
+  margin-right: 50px;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.header {
+  width: 100%;
+}
+
+.header-brand {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}

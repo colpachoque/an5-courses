@@ -1,0 +1,29 @@
+<div class="card text-white bg-info mb-3 custom" style="max-width: 20rem;">
+  <div class="card-header">{{course.id}} {{course.name}}
+    <ng-template #content let-c="close" let-d="dismiss">
+      <div class="modal-header">
+        <h4 class="modal-title">Please confirm</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete this course?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="c('Confirm')">Confirm</button>
+      </div>
+    </ng-template>
+
+    <button type="button" class="close" aria-label="Close" (click)="open(content)">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">Info card title</h4>
+    <p class="card-text">{{course.description}}Some quick example text to build on the card title and make up
+      the bulk of the card's content.</p>
+    <button class="btn btn-primary">Edit Course</button>
+
+  </div>
+</div>
